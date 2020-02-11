@@ -22,8 +22,6 @@
     group: "{{ nifi_registry_group }}"
   with_items:
     - "{{ nifi_registry_config_dirs.install }}"
-    - "{{ nifi_registry_config_dirs.run }}"
-    - "{{ nifi_registry_config_dirs.logs }}"
 
 - name: Set NiFi Registry home
   copy:
